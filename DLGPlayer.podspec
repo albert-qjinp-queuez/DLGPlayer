@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
   # s.tvos.deployment_target = "9.0"
 
 
-#  s.source       = { :git => "https://github.com/albert-qjinp-queuez/DLGPlayer.git", :tag => "#{s.version}" }
-  s.source       = { :git => "file:////code/bear/DLGPlayer.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/albert-qjinp-queuez/DLGPlayer.git", :tag => "#{s.version}" }
+#  s.source       = { :git => "file:////code/bear/DLGPlayer.git", :tag => "#{s.version}" }
 
 
   s.source_files  = "DLGPlayer/*.{h,m}", "DLGPlayer/**/*.{h,m}"

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DLGPlayerClass.h"
+#import "DLGPlayer.h"
 
 typedef enum : NSUInteger {
     DLGPlayerStatusNone,

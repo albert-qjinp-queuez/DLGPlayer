@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C30A5398222B61F9008297DD /* DLGPlayerClass.h in Headers */ = {isa = PBXBuildFile; fileRef = C30A5396222B61F8008297DD /* DLGPlayerClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C30A5399222B61F9008297DD /* DLGPlayerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A5397222B61F9008297DD /* DLGPlayerClass.m */; };
+		C30A5398222B61F9008297DD /* DLGPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C30A5396222B61F8008297DD /* DLGPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30A5399222B61F9008297DD /* DLGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A5397222B61F9008297DD /* DLGPlayer.m */; };
 		C34B6765222B5C9B00AEAE64 /* DLGPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C34B675B222B5C9B00AEAE64 /* DLGPlayer.framework */; };
 		C34B676A222B5C9B00AEAE64 /* DLGPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C34B6769222B5C9B00AEAE64 /* DLGPlayerTests.m */; };
 		C39EFA8F222B5FBD00587014 /* DLGPlayerDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C39EFA6A222B5FBC00587014 /* DLGPlayerDecoder.m */; };
@@ -36,7 +36,6 @@
 		C39EFAA5222B5FBD00587014 /* DLGPlayerRGBFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C39EFA86222B5FBC00587014 /* DLGPlayerRGBFragmentShader.glsl */; };
 		C39EFAA6222B5FBD00587014 /* DLGPlayerRotationVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C39EFA88222B5FBC00587014 /* DLGPlayerRotationVertexShader.glsl */; };
 		C39EFAA7222B5FBD00587014 /* DLGPlayerVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C39EFA89222B5FBC00587014 /* DLGPlayerVertexShader.glsl */; };
-		C39EFAA8222B5FBD00587014 /* DLGPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C39EFA8A222B5FBC00587014 /* DLGPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C39EFAA9222B5FBD00587014 /* DLGPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C39EFA8B222B5FBD00587014 /* DLGPlayerViewController.m */; };
 		C39EFAAA222B5FBD00587014 /* DLGPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C39EFA8C222B5FBD00587014 /* DLGPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB4097759203365F64A45F0A /* Pods_DLGPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F3D635729BD0B84DFAB6CE /* Pods_DLGPlayer.framework */; };
@@ -57,8 +56,8 @@
 		53612D047A19FD0DA15986A8 /* Pods_DLGPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLGPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65908FAC90A5E910E1D314AC /* Pods-DLGPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLGPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLGPlayer/Pods-DLGPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		84FA932B594A6FDD17A7DF62 /* Pods-DLGPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLGPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLGPlayer/Pods-DLGPlayer.release.xcconfig"; sourceTree = "<group>"; };
-		C30A5396222B61F8008297DD /* DLGPlayerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerClass.h; sourceTree = "<group>"; };
-		C30A5397222B61F9008297DD /* DLGPlayerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerClass.m; sourceTree = "<group>"; };
+		C30A5396222B61F8008297DD /* DLGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayer.h; sourceTree = "<group>"; };
+		C30A5397222B61F9008297DD /* DLGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayer.m; sourceTree = "<group>"; };
 		C3433DAA1F06A9C7BE0C6680 /* Pods-DLGPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLGPlayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLGPlayerTests/Pods-DLGPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C34B675B222B5C9B00AEAE64 /* DLGPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLGPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34B6764222B5C9B00AEAE64 /* DLGPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLGPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +90,6 @@
 		C39EFA87222B5FBC00587014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/DLGPlayerStrings.strings; sourceTree = "<group>"; };
 		C39EFA88222B5FBC00587014 /* DLGPlayerRotationVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLGPlayerRotationVertexShader.glsl; sourceTree = "<group>"; };
 		C39EFA89222B5FBC00587014 /* DLGPlayerVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLGPlayerVertexShader.glsl; sourceTree = "<group>"; };
-		C39EFA8A222B5FBC00587014 /* DLGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayer.h; sourceTree = "<group>"; };
 		C39EFA8B222B5FBD00587014 /* DLGPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerViewController.m; sourceTree = "<group>"; };
 		C39EFA8C222B5FBD00587014 /* DLGPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerViewController.h; sourceTree = "<group>"; };
 		C39EFA8D222B5FBD00587014 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,9 +166,8 @@
 				C39EFA71222B5FBC00587014 /* frame */,
 				C39EFA80222B5FBC00587014 /* resource */,
 				C39EFA6E222B5FBC00587014 /* view */,
-				C39EFA8A222B5FBC00587014 /* DLGPlayer.h */,
-				C30A5396222B61F8008297DD /* DLGPlayerClass.h */,
-				C30A5397222B61F9008297DD /* DLGPlayerClass.m */,
+				C30A5396222B61F8008297DD /* DLGPlayer.h */,
+				C30A5397222B61F9008297DD /* DLGPlayer.m */,
 				C39EFA8C222B5FBD00587014 /* DLGPlayerViewController.h */,
 				C39EFA8B222B5FBD00587014 /* DLGPlayerViewController.m */,
 				C39EFA8D222B5FBD00587014 /* Info.plist */,
@@ -254,7 +251,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30A5398222B61F9008297DD /* DLGPlayerClass.h in Headers */,
+				C30A5398222B61F9008297DD /* DLGPlayer.h in Headers */,
 				C39EFA95222B5FBD00587014 /* DLGPlayerVideoYUVFrame.h in Headers */,
 				C39EFA96222B5FBD00587014 /* DLGPlayerVideoFrame.h in Headers */,
 				C39EFAAA222B5FBD00587014 /* DLGPlayerViewController.h in Headers */,
@@ -265,7 +262,6 @@
 				C39EFA91222B5FBD00587014 /* DLGPlayerDecoder.h in Headers */,
 				C39EFAA0222B5FBD00587014 /* DLGPlayerUtils.h in Headers */,
 				C39EFA94222B5FBD00587014 /* DLGPlayerView.h in Headers */,
-				C39EFAA8222B5FBD00587014 /* DLGPlayer.h in Headers */,
 				C39EFA9A222B5FBD00587014 /* DLGPlayerVideoRGBFrame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +414,7 @@
 				C39EFA93222B5FBD00587014 /* DLGPlayerView.m in Sources */,
 				C39EFAA1222B5FBD00587014 /* DLGPlayerUtils.m in Sources */,
 				C39EFA8F222B5FBD00587014 /* DLGPlayerDecoder.m in Sources */,
-				C30A5399222B61F9008297DD /* DLGPlayerClass.m in Sources */,
+				C30A5399222B61F9008297DD /* DLGPlayer.m in Sources */,
 				C39EFA9B222B5FBD00587014 /* DLGPlayerVideoFrame.m in Sources */,
 				C39EFA9E222B5FBD00587014 /* DLGPlayerFrame.m in Sources */,
 				C39EFAA9222B5FBD00587014 /* DLGPlayerViewController.m in Sources */,

@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
   s.name         = "DLGPlayer"
   s.version      = "0.0.1"
-  s.summary      = "ffmpeg based video Player : DLGPlayer."
-  s.description  = 'DLGPlayer making as pod not sure why this is not working'
+  s.summary      = "A media player for iOS based on FFmpeg 4.0."
+  s.description  = "A media player for iOS based on FFmpeg 4.0. DLGPlayer uses [kolyvan/kxmovie] as reference when written and **NO deprecated** functions and methods are used. If you found any deprecated function or method, please submit an issue to me. Great thanks for Konstantin Boukreev's kxmovie."
   s.homepage     = "https://github.com/albert-qjinp-queuez/DLGPlayer"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 

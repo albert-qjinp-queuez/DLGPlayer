@@ -475,6 +475,7 @@
 				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerYUVFragmentShader.glsl",
 				"${PODS_ROOT}/../../DLGPlayer/resource/Base.lproj/DLGPlayerStrings.strings",
 				"${PODS_ROOT}/../../DLGPlayer/resource/en.lproj/DLGPlayerStrings.strings",
+				"${PODS_ROOT}/../../DLGPlayer/resource/ko-KR.lproj/DLGPlayerStrings.strings",
 				"${PODS_ROOT}/../../DLGPlayer/resource/zh-Hans.lproj/DLGPlayerStrings.strings",
 			);
 			name = "[CP] Copy Pods Resources";

@@ -1,0 +1,27 @@
+/*
+  DLGPlayerStrings.strings
+  DLGPlayer
+ 
+  Created by Liu Junqi on 05/12/2016.
+  Copyright © 2016 Liu Junqi. All rights reserved.
+*/
+"DLG_PLAYER_STRINGS_INVALID_URL" = "잘못된 URL";
+"DLG_PLAYER_STRINGS_CANNOT_OPEN_INPUT" = "파일 열기 실패";
+"DLG_PLAYER_STRINGS_CANNOT_FIND_STREAM_INFO" = "스트림 정보를 찾을 수 없습니다";
+"DLG_PLAYER_STRINGS_NO_VIDEO_AND_AUDIO_STREAM" = "비디오 오디오 스트림이 없습니다.";
+
+"DLG_PLAYER_STRINGS_NO_AUDIO_OUTPUT" = "오디오 출력 없음";
+"DLG_PLAYER_STRINGS_NO_AUDIO_CHANNEL" = "오디오 체널 없음";
+"DLG_PLAYER_STRINGS_NO_AUDIO_SAMPLE_RATE" = "오디오 셈플 비율 없음";
+"DLG_PLAYER_STRINGS_NO_AUDIO_VOLUME" = "오디오 소리크기 없음";
+"DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_CATEGORY" = "오디오 카테고리 설정 불가";
+"DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_ACTIVE" = "오디오 활성화 불가";
+"DLG_PLAYER_STRINGS_CANNOT_INIT_AUDIO_UNIT" = "오디오 유닛 초기화(init) 실패";
+"DLG_PLAYER_STRINGS_CANNOT_CREATE_AUDIO_UNIT" = "오디오 유닛 생성(create) 실패";
+"DLG_PLAYER_STRINGS_CANNOT_GET_AUDIO_STREAM_DESCRIPTION" = "오디오 스트림 설명을 못찾았습니다.";
+"DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_RENDER_CALLBACK" = "오디오 렌더링 콜백 설정 실패";
+"DLG_PLAYER_STRINGS_CANNOT_UNINIT_AUDIO_UNIT" = "오디오 유닛 비활성(uninit) 실패";
+"DLG_PLAYER_STRINGS_CANNOT_DISPOSE_AUDIO_UNIT" = "오디오 유닛 종료(dispose) 실패";
+"DLG_PLAYER_STRINGS_CANNOT_DEACTIVATE_AUDIO" = "오디오 유닛 비활성(deactivate) 실패";
+"DLG_PLAYER_STRINGS_CANNOT_START_AUDIO_UNIT" = "오디오 유닛 시작(start) 실패";
+"DLG_PLAYER_STRINGS_CANNOT_STOP_AUDIO_UNIT" = "오디오 유닛 멈춤(stop) 실패";

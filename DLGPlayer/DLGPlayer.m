@@ -7,7 +7,6 @@
 //
 
 #import "DLGPlayer.h"
-#import "DLGPlayerView.h"
 #import "DLGPlayerDecoder.h"
 #import "DLGPlayerDef.h"
 #import "DLGPlayerAudioManager.h"
@@ -17,7 +16,8 @@
 
 @interface DLGPlayer ()
 
-@property (nonatomic, strong) DLGPlayerView *view;
+@property (nonatomic, strong) DLGRenderer *renderer;
+
 @property (nonatomic, strong) DLGPlayerDecoder *decoder;
 @property (nonatomic, strong) DLGPlayerAudioManager *audio;
 
@@ -51,6 +51,14 @@
     return self;
 }
 
+- (id)initWithRenderer:(DLGRenderer*)renderer{
+    self = [self init];
+    if (self) {
+        self.renderer = renderer;
+    }
+    return self;
+}
+
 - (void)dealloc {
     NSLog(@"DLGPlayer dealloc");
 }
@@ -59,7 +67,6 @@
     [self initVars];
     [self initAudio];
     [self initDecoder];
-    [self initView];
 }
 
 - (void)initVars {
@@ -83,11 +90,6 @@
     self.vFramesLock = dispatch_semaphore_create(1);
 }
 
-- (void)initView {
-    DLGPlayerView *v = [[DLGPlayerView alloc] init];
-    self.view = v;
-}
-
 - (void)initDecoder {
     self.decoder = [[DLGPlayerDecoder alloc] init];
 }
@@ -108,7 +110,7 @@
     self.bufferedDuration = 0;
     self.mediaPosition = 0;
     self.mediaSyncTime = 0;
-    [self.view clear];
+    [self.renderer clear];
 }
 
 - (void)open:(NSString *)url {
@@ -136,11 +138,12 @@
             return;
         }
         dispatch_async(dispatch_get_main_queue(), ^{
-            strongSelf.view.isYUV = [strongSelf.decoder isYUV];
-            strongSelf.view.keepLastFrame = [strongSelf.decoder hasPicture] && ![strongSelf.decoder hasVideo];
-            strongSelf.view.rotation = strongSelf.decoder.rotation;
-            strongSelf.view.contentSize = CGSizeMake([strongSelf.decoder videoWidth], [strongSelf.decoder videoHeight]);
-            strongSelf.view.contentMode = UIViewContentModeScaleAspectFit;
+            
+            strongSelf.renderer.isYUV = [strongSelf.decoder isYUV];
+            strongSelf.renderer.keepLastFrame = [strongSelf.decoder hasPicture] && ![strongSelf.decoder hasVideo];
+            strongSelf.renderer.rotation = strongSelf.decoder.rotation;
+            strongSelf.renderer.contentSize = CGSizeMake([strongSelf.decoder videoWidth], [strongSelf.decoder videoHeight]);
+//            strongSelf.renderer.contentMode = UIViewContentModeScaleAspectFit;
             
             strongSelf.duration = strongSelf.decoder.duration;
             strongSelf.metadata = strongSelf.decoder.metadata;
@@ -387,9 +390,10 @@
     // Render if has picture
     if (self.decoder.hasPicture && self.vframes.count > 0) {
         DLGPlayerVideoFrame *frame = self.vframes[0];
-        self.view.contentSize = CGSizeMake(frame.width, frame.height);
+        
+        self.renderer.contentSize = CGSizeMake(frame.width, frame.height);
         [self.vframes removeObjectAtIndex:0];
-        [self.view render:frame];
+        [self.renderer render:frame];
     }
     
     // Check whether render is neccessary
@@ -413,7 +417,7 @@
             dispatch_semaphore_signal(self.vFramesLock);
         }
     }
-    [self.view render:frame];
+    [self.renderer render:frame];
     
     // Sync audio with video
     double syncTime = [self syncTime];
@@ -515,10 +519,6 @@
             }
         }
     }
-}
-
-- (UIView *)playerView {
-    return self.view;
 }
 
 - (void)setPosition:(double)position {

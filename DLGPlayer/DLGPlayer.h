@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 
 #import "DLGPlayerDef.h"
+#import "DLGRenderer.h"
 
 typedef void (^onPauseComplete)(void);
 
 @interface DLGPlayer : NSObject
 
-@property (readonly, strong) UIView *playerView;
+- (id)initWithRenderer:(DLGRenderer*)renderer;
+@property (readonly, strong) DLGRenderer *renderer;
 
 @property (nonatomic) double minBufferDuration;
 @property (nonatomic) double maxBufferDuration;

@@ -9,15 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class DLGPlayerVideoFrame;
+@class DLGPlayer;
+@class DLGRenderer;
 
 @interface DLGPlayerView : UIView
 
-@property (nonatomic) CGSize contentSize;
-@property (nonatomic) CGFloat rotation;
-@property (nonatomic) BOOL isYUV;
-@property (nonatomic) BOOL keepLastFrame;
+@property (nonatomic, strong) DLGPlayer * player;
+@property (nonatomic, weak) DLGRenderer * renderer;
 
-- (void)render:(DLGPlayerVideoFrame *)frame;
-- (void)clear;
-
+- (BOOL)initVars;
 @end

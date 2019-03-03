@@ -8,6 +8,7 @@
 
 #import "DLGPlayerViewController.h"
 #import "DLGPlayerUtils.h"
+#import "DLGOpenGLPlayerView.h"
 
 typedef enum : NSUInteger {
     DLGPlayerOperationNone,
@@ -337,8 +338,9 @@ typedef enum : NSUInteger {
 
 #pragma mark - UI
 - (void)initPlayer {
-    self.player = [[DLGPlayer alloc] init];
-    UIView *v = self.player.playerView;
+    DLGPlayerView * v = [[DLGOpenGLPlayerView alloc] init];
+    self.player = v.player;
+  
     v.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:v];
     

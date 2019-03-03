@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <DLGPlayer/DLGPlayer.h>
+#import <DLGPlayer/DLGPlayerViewController.h>
 
 @interface ViewController () <UITextFieldDelegate>
 

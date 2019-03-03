@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DLGPlayer/DLGPlayer.xcodeproj">
+      location = "self:/code/DLGPlayer/Example/DLGPlayerExample.xcodeproj">
    </FileRef>
 </Workspace>

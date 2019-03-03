@@ -7,26 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DLGPlayerDef.h"
 
-typedef void (^onPauseComplete)(void);
+//! Project version number for DLGPlayer.
+FOUNDATION_EXPORT double DLGPlayerVersionNumber;
 
-@interface DLGPlayer : NSObject
+//! Project version string for DLGPlayer.
+FOUNDATION_EXPORT const unsigned char DLGPlayerVersionString[];
 
-@property (readonly, strong) UIView *playerView;
+// In this header, you should import all the public headers of your framework using statements like #import <DLGPlayer/PublicHeader.h>
+#import <DLGPlayer/DLGPlayerClass.h>
+#import <DLGPlayer/DLGPlayerViewController.h>
 
-@property (nonatomic) double minBufferDuration;
-@property (nonatomic) double maxBufferDuration;
-@property (nonatomic) double position;
-@property (nonatomic) double duration;
-@property (nonatomic) BOOL opened;
-@property (nonatomic) BOOL playing;
-@property (nonatomic) BOOL buffering;
-@property (nonatomic, strong) NSDictionary *metadata;
-
-- (void)open:(NSString *)url;
-- (void)close;
-- (void)play;
-- (void)pause;
-
-@end

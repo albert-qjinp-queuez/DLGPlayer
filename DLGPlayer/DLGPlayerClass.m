@@ -6,7 +6,7 @@
 //  Copyright © 2016 Liu Junqi. All rights reserved.
 //
 
-#import "DLGPlayer.h"
+#import "DLGPlayerClass.h"
 #import "DLGPlayerView.h"
 #import "DLGPlayerDecoder.h"
 #import "DLGPlayerDef.h"

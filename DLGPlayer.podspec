@@ -22,14 +22,20 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "10.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "10.0"
+  # s.ios.deployment_target = "10.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
+  s.pod_target_xcconfig = {
+    'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)',
+    'VALID_ARCHS' => 'arm64 armv7'
+    
+  }
+  s.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7' }
 
-  s.source       = { :git => "https://github.com/albert-qjinp-queuez/DLGPlayer.git", :tag => "#{s.version}" }
-#  s.source       = { :git => "file:////code/bear/DLGPlayer.git", :tag => "#{s.version}" }
+#  s.source       = { :git => "https://github.com/albert-qjinp-queuez/DLGPlayer.git", :tag => "#{s.version}" }
+  s.source       = { :git => "file:////code/bear/DLGPlayer.git/", :tag => "#{s.version}" }
 
 
   s.source_files  = "DLGPlayer/*.{h,m}", "DLGPlayer/**/*.{h,m}"
@@ -46,9 +52,9 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "DLGPlayer/resource/*.glsl", "DLGPlayer/resource/**/*.strings"
+  s.resources = "DLGPlayer/resource/*.glsl","DLGPlayer/resource/*.metal","DLGPlayer/resource/**/*.strings","**/*.metallib"
 
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
+#   s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -73,6 +79,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = { "OTHER_LDFLAGS" => "-lz" }
   s.static_framework = true
   s.dependency "mobile-ffmpeg-full", "~> 4.2"
 

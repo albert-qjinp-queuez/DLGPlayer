@@ -7,6 +7,9 @@
 
 #import "DLGMetalPlayerView.h"
 #import "DLGMetalViewRenderer.h"
+#import <QuartzCore/QuartzCore.h>
+#import <Metal/Metal.h>
+#import <Metal/MTLBuffer.h>
 
 @implementation DLGMetalPlayerView
 

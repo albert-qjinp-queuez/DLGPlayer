@@ -378,7 +378,7 @@
 				C1C491991DED4B670004B892 /* Frameworks */,
 				C1C4919A1DED4B670004B892 /* Resources */,
 				C39EFABD222B605700587014 /* Embed Frameworks */,
-				E464DB7F27E0581FDEDD79C0 /* [CP] Copy Pods Resources */,
+				164AE69AA387601CBAD86FF1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -441,6 +441,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		164AE69AA387601CBAD86FF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DLGPlayerExample/Pods-DLGPlayerExample-resources.sh",
+				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerRGBFragmentShader.glsl",
+				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerRotationScaleVertexShader.glsl",
+				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerRotationVertexShader.glsl",
+				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerVertexShader.glsl",
+				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerYUVFragmentShader.glsl",
+				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerRGBFragmentShader.metal",
+				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerVertexShader.metal",
+				"${PODS_ROOT}/../../DLGPlayer/resource/Base.lproj/DLGPlayerStrings.strings",
+				"${PODS_ROOT}/../../DLGPlayer/resource/en.lproj/DLGPlayerStrings.strings",
+				"${PODS_ROOT}/../../DLGPlayer/resource/ko-KR.lproj/DLGPlayerStrings.strings",
+				"${PODS_ROOT}/../../DLGPlayer/resource/zh-Hans.lproj/DLGPlayerStrings.strings",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerRGBFragmentShader.glsl",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerRotationScaleVertexShader.glsl",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerRotationVertexShader.glsl",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerVertexShader.glsl",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerYUVFragmentShader.glsl",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerRGBFragmentShader.metal",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerVertexShader.metal",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerStrings.strings",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DLGPlayerExample/Pods-DLGPlayerExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		853F15064F73F78EBD5B4D78 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -457,41 +496,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E464DB7F27E0581FDEDD79C0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DLGPlayerExample/Pods-DLGPlayerExample-resources.sh",
-				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerRGBFragmentShader.glsl",
-				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerRotationScaleVertexShader.glsl",
-				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerRotationVertexShader.glsl",
-				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerVertexShader.glsl",
-				"${PODS_ROOT}/../../DLGPlayer/resource/DLGPlayerYUVFragmentShader.glsl",
-				"${PODS_ROOT}/../../DLGPlayer/resource/Base.lproj/DLGPlayerStrings.strings",
-				"${PODS_ROOT}/../../DLGPlayer/resource/en.lproj/DLGPlayerStrings.strings",
-				"${PODS_ROOT}/../../DLGPlayer/resource/ko-KR.lproj/DLGPlayerStrings.strings",
-				"${PODS_ROOT}/../../DLGPlayer/resource/zh-Hans.lproj/DLGPlayerStrings.strings",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerRGBFragmentShader.glsl",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerRotationScaleVertexShader.glsl",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerRotationVertexShader.glsl",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerVertexShader.glsl",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerYUVFragmentShader.glsl",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DLGPlayerStrings.strings",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DLGPlayerExample/Pods-DLGPlayerExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

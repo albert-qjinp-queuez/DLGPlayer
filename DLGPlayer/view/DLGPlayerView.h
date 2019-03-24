@@ -18,4 +18,7 @@
 @property (nonatomic, weak) DLGRenderer * renderer;
 
 - (BOOL)initVars;
+
++(DLGPlayerView*)glPlayer;
++(DLGPlayerView*)mlPlayer;
 @end

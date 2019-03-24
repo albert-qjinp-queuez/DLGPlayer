@@ -10,12 +10,21 @@
 #import "DLGPlayerVideoFrame.h"
 #import "DLGPlayer.h"
 #import "DLGOpenGLViewRenderer.h"
-
+#import "DLGMetalPlayerView.h"
+#import "DLGOpenGLPlayerView.h"
 
 @interface DLGPlayerView ()
 @end
 
 @implementation DLGPlayerView
+
++(DLGPlayerView*)glPlayer {
+    return nil;
+}
+
++(DLGPlayerView*)mlPlayer {
+    return nil;
+}
 
 - (id)init {
     self = [super init];

@@ -5,7 +5,7 @@
 //  Created by Albert Park on 3/3/19.
 //
 
-#import <DLGPlayer/DLGPlayer.h>
+#import "DLGPlayer.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

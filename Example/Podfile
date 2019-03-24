@@ -7,4 +7,5 @@ target 'DLGPlayerExample' do
 
   # Pods for DLGPlayerExample
   pod 'DLGPlayer', :path => '../'
+#  pod 'FhotoPlayer', :path => '/code/FhotoPlayer'
 end

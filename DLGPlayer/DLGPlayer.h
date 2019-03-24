@@ -32,4 +32,7 @@ typedef void (^onPauseComplete)(void);
 - (void)play;
 - (void)pause;
 
+//override
+- (void)initDecoder;
+
 @end
